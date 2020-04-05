@@ -24,18 +24,11 @@
 						<li id="l5">Cad Montador</li>
 					</ul>
 			</nav>
-			<main class="cx conteudo" id="mainPrinciapal">
-			<?php	
-			//	if(isset($_REQUEST['frm'])){
-				//	include_once'./app/views/forms/'.$_REQUEST['frm'].'.php';
-				//}
-			?>
-			</main>
-			<!--<aside class="cx sidebar">
-			Sidebar
-				
-			</aside>-->
+			<!--CONTAINER PRINCIPAL -->
+			<main class="cx conteudo" id="mainPrinciapal"></main>
+			<!--<aside class="cx sidebar">Sidebar</aside>-->
 			<footer class="cx rodape">Developed by Elinelton Leite</footer>
+			<!--CAIXA DE MENUS -->
 			<div class="cx bx box1" id="bx1"><img width="50" src="./app/views/imagens/camera.png"></div>
 			<div class="cx bx box2" id="bx2"><img width="50"src="./app/views/imagens/microphone.png"></div>
 			<div class="cx bx box3" id="bx3"><img width="50" src="./app/views/imagens/pen.png"></div>
