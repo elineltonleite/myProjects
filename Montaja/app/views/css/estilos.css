@@ -23,10 +23,43 @@
 	grid-row:2 / 3;
 }
 #frmCadImgCmp5{
-	grid-column:3 / 5;
+	grid-column:3 / 4;
 	grid-row:2 / 3;
 }
-input{
+#frmCadImgCmp6{
+	grid-column:4 / 5;
+	grid-row:2 / 3;
+}
+#frmCadImgCmp7{
+	grid-column:1 / 5;
+	grid-row:3 / 4;
+}
+#frmCadImgCmp8{
+	grid-column:2 / 4;
+	grid-row:4 / 5;
+}
+#imgFile{
+	grid-column:1 / 2;
+	grid-row: 4 / 5;
+}
+#btnCadImg{
+	grid-column: 4 / 5;
+	grid-row: 4 / 5;
+}
+.btn{
+	padding:10px;
+	border:1px solid default;
+}
+.btn:hover{
+	cursor:pointer;
+	background:rgb(25, 90, 190);
+	color:white;
+	border:1px solid rgb(25, 90, 190);
+}
+textarea{
+	height:100px;
+}
+input, select, textarea{
 	padding:5px;
 	width:100%;
 }
@@ -37,7 +70,8 @@ a{
 	padding:10px;
 }*/
 h1{
-	text-shadow:2px 2px #000;
+	text-shadow:2px 2px 4px black;
+	font-size:50px;
 }
 
 .wrapper{
@@ -98,7 +132,8 @@ ul li:hover{
 	grid-row: 5 / 6;
 	grid-column:1 / 7;
 	background:rgb(25, 90, 190);
-	padding:10px;
+	padding:20px;
+	height:10vh;
 }
 .bx{
 	cursor:pointer;

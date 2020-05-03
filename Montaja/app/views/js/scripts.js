@@ -61,3 +61,9 @@ function loadDoc(arquivo){
 	xmlhttp.send();
 	
 }
+// recuperar data atual e configura o input date
+
+//window.onload=function(){
+	var dateControl = document.querySelector('input[type="date"]');
+	dateControl.value = '2017-06-01';
+//}
