@@ -5,6 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./app/views/css/estilos.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<script src="./app/views/js/scripts.js"></script>
 	<head>
 	<body>
@@ -14,7 +16,7 @@
 					<img   src="./app/views/imagens/tux.png" width="90">
 				</div>
 				<div class="cx2">
-					<h1>Monta Já</h1>
+					<h1>MontaJá</h1>
 				</div>
 				<div class="cx3">caixa-3</div>
 			</header>
@@ -23,7 +25,7 @@
 			<div class="cx bx box1" id="bx1"><img width="50" src="./app/views/imagens/camera.png"></div>
 			<div class="cx bx box2" id="bx2"><img width="50"src="./app/views/imagens/microphone.png"></div>
 			<div class="cx bx box3" id="bx3"><img width="50" src="./app/views/imagens/pen.png"></div>
-			<div class="cx box4" id="bx4"><img width="50" src="./app/views/imagens/book.png"></div>
+			<div class="cx box4" id="bx4"><!--<img width="50" src="./app/views/imagens/book.png">--></div>
 			<nav class="cx menu" id="mainMenu">
 				<h3 id="h3Menu">Menu</h3>
 					<ul>
@@ -37,9 +39,7 @@
 			<!--CONTAINER PRINCIPAL -->
 			<main class="cx conteudo" id="mainPrinciapal"></main>
 			<!--<aside class="cx sidebar">Sidebar</aside>-->
-			<footer class="cx rodape">Developed by elineltonleite@gmail.com</footer>
-			
-
+			<footer class="cx rodape">Developed by elineltonleite@gmail.com</footer>			
 		</main>
 		<script src="./app/views/js/scripts.js"></script>
 	</body>
