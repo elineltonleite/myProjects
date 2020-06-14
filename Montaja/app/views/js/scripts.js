@@ -1,3 +1,8 @@
+function maiusculo(id){
+	var ucase = document.getElementById(id).value.toUpperCase()
+		document.getElementById(id).value= ucase;
+}
+
 function ocultarForm(){
 	document.getElementById('frm').style.display="none";
 }
@@ -12,9 +17,11 @@ function ocultarMenuAudio(){
 	document.getElementById('l3').style.display="none";
 	document.getElementById('l4').style.display="none";
 }
+
 ocultarMenuAudio();
 ocultarMenuImagem();
 ocultarMenuAdicionar();
+
 
 document.getElementById('bx1').onclick = function(){
 	ocultarMenuAudio();
@@ -22,29 +29,29 @@ document.getElementById('bx1').onclick = function(){
 	document.getElementById('h3Menu').innerHTML="Manipular Imagem";
 	document.getElementById('l1').style.display="block";
 	document.getElementById('l2').style.display="block";
+	ocultarForm();
 }
 
 document.getElementById('bx2').onclick = function(){
-	ocultarForm();
 	ocultarMenuImagem();
 	ocultarMenuAdicionar();
 	document.getElementById('h3Menu').innerHTML="Manipular Audio";
 	document.getElementById('l3').style.display="block";
 	document.getElementById('l4').style.display="block";
+	ocultarForm();
 }
 document.getElementById('bx3').onclick = function(){
-	ocultarForm();
 	ocultarMenuImagem();
 	ocultarMenuAudio();
 	document.getElementById('h3Menu').innerHTML="Outros";
 	document.getElementById('l5').style.display="block";
+	ocultarForm();
 }
 
-//ajax teste
 
-var arquivo
+//função adiciona formulário via ajax
 function loadDoc(arquivo){
-	//var xmlhttp = new XMLHttpRequest();
+
 	if (window.XMLHttpRequest) {
 		// code for modern browsers
 		xmlhttp = new XMLHttpRequest();
@@ -54,16 +61,9 @@ function loadDoc(arquivo){
 	}
 	xmlhttp.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
-			document.getElementById("mainPrinciapal").innerHTML = this.responseText;
+			document.getElementById("mainPrincipal").innerHTML = this.responseText;
 		}
 	}
-	xmlhttp.open("GET","./app/views/forms/"+arquivo+".php",true);
+	xmlhttp.open("POST","./app/views/forms/"+arquivo+".php",true);
 	xmlhttp.send();
-	
 }
-// recuperar data atual e configura o input date
-
-//window.onload=function(){
-	var dateControl = document.querySelector('input[type="date"]');
-	dateControl.value = '2017-06-01';
-//}

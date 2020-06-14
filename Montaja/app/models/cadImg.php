@@ -6,6 +6,10 @@ echo $_REQUEST['txtMontador'].'<br>';
 echo $_REQUEST['txtTel'].'<br>';
 echo $_REQUEST['txtData'].'<br>';
 echo $_REQUEST['txtObservacao'].'<br>';
-$fotos= $_REQUEST['fotos'];
+
+
+$name = $_FILES['foto']['name'];
 echo'<pre>';
-print_r($fotos);
+print_r($_FILES);
+echo'
+<a href="../../index.php?frm=frmCadImagem">Voltar</a>';

@@ -1,33 +1,33 @@
 
 <form action="./app/models/cadImg.php" method="POST" class="frm" id="frm" enctype="multipart/form-data">
-		<label id="frmCadImgCmp1">
+		<h1 class="titleForm row-1 col-full">Cadastrar Foto</h1>
+		<label class="row-2 col-1_2">
 		Nº Pedido
-			<input type="text" name="txtPedido" id="">
+			<input type="text" name="txtPedido" id="pedido">
 		</label>
-		<label id="frmCadImgCmp2">
+		<label class="row-2 col-2_4">
 		Endereço da montagem
-			<input type="text" name="txtEndereco" id="">
+			<input type="text" name="txtEndereco" id="txtEndereco" onchange="maiusculo('txtEndereco')">
 		</label>
-		<label id="frmCadImgCmp3">
+		<label class="row-2 col-4_5">
 		Bairro / Cidade
-			<!--<input type="text" name="" id="">-->
-			<select  name="cidade">
+			<select  name="cidade" id="cidade" >
 				<?php
 					$bairros=[
-					'Águas lindas GO','Asa Sul','Asa Norte',
-					'Brazlândia','Brasília',
-					'Ceilândia','Cidade Ocidental','Cidade Estrutural','Cocalzinho Go','Cruzeiro',
-					'Formosa',
-					'Gama','Guará',
-					'Incra',
-					'Luziânia',
-					'Novo Gama','Núcleo Bandeirante',
-					'Padre Bernardo','Planaltina DF','Planaltina GO','Plano Piloto',
-					'Recanto das Emas','Riacho Fundo I', 'Riacho Fundo II',
-					'Samambaia','Santa Maria','Santo Antônio GO','Sobradinho',
-					'Taguatinga',
-					'Valparaiso GO',
-					'W3 Norte','W3 Sul'
+					'','ÁGUAS LINDAS GO','ASA SUL','ASA NORTE',
+					'BRAZLÂNDIA','BRASÍLIA',
+					'CANDOGOLÂNDIA','CEILÂNDIA','CIDADE OCIDENTAL','CIDADE ESTRUTURAL','COCALZINHO GO','CRUZEIRO',
+					'FORMOSA',
+					'GAMA','GUARÁ',
+					'INCRA',
+					'LUZIÂNIA',
+					'NOVO GAMA','NÚCLEO BRANDEIRANTE',
+					'PADRE BERNARDO','PLANALTINA DF','PLANALTINA GO','PLANO PILOTO',
+					'RECANTO DAS EMAS','RIACHO FUNDO I', 'RIACHO FUNDO II',
+					'SAMAMBAIA','SANTA MARIA','SANTO ANTÔNIO GO','SOBRADINHO',
+					'TAGUATINGA',
+					'VALPARAISO GO',
+					'W3 NORTE','W3 SUL'
 					];
 					for($i=0; $i<count($bairros); $i++){
 						echo'<option>'.$bairros[$i].'</option>';	
@@ -35,24 +35,26 @@
 				?>	
 			</select>
 		</label>
-		<label id="frmCadImgCmp4">
+		<label class="row-3 col-1_3">
 		Nome do montador
-			<input type="text" name="txtMontador" id="">
+			<input type="text" name="txtMontador" id="txtMontador" onchange="maiusculo('txtMontador')">
 		</label>
-		<label id="frmCadImgCmp5">
-		Telefone montador
+		<label class="row-3">
+		Telefone do montador
 			<input type="text" name="txtTel" id="">
 		</label>
-		<label id="frmCadImgCmp6">
+		<label class="row-3">
 		Data da visita
 			<input type="date" name="txtData" id="cmpData">
 		</label>
-		<label id="frmCadImgCmp7">
+		<label class="row-4 col-full">
 		Observação
-			<textarea id="" name="txtObservacao"></textarea>
+			<textarea id="txtObservacao" name="txtObservacao" onchange="maiusculo('txtObservacao')"></textarea>
 		</label>
-		<label id="frmCadImgCmp8">
-			<input type="file" name="fotos[]" multiple="multiple" id="">
+		<label class="row-5 col-1_4">
+			<input type="file" name="foto[]" multiple="multiple" id="">
 		</label>
-	<button id="btnCadImg" class="btn">Enviar</button>
+		<label class="row-5">
+		<button id="" class="btn">Enviar</button>
+		</label>
 </form>
