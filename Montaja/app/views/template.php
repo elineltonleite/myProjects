@@ -22,10 +22,19 @@
 			</header>
 			
 			<!--CAIXA DE MENUS -->
-			<div class="cx bx box1" id="bx1"><img width="50" src="./app/views/imagens/camera.png"></div>
-			<div class="cx bx box2" id="bx2"><img width="50"src="./app/views/imagens/microphone.png"></div>
-			<div class="cx bx box3" id="bx3"><img width="50" src="./app/views/imagens/pen.png"></div>
-			<div class="cx box4" id="bx4"><!--<img width="50" src="./app/views/imagens/book.png">--></div>
+			<div class="cx bx box1" id="bx1">
+				<img width="50" src="./app/views/imagens/camera.png">
+			</div>
+			<div class="cx bx box2" id="bx2">
+				<img width="50"src="./app/views/imagens/microphone.png">
+			</div>
+			<div class="cx bx box3" id="bx3">
+				<img width="50" src="./app/views/imagens/pen.png">
+			</div>
+			<div class="cx box4 col-4_6">
+				<!--<img width="50" src="./app/views/imagens/book.png">-->
+			</div>
+			
 			<nav class="cx menu" id="mainMenu">
 				<h3 id="h3Menu">Menu</h3>
 					<ul>

@@ -1,9 +1,9 @@
 
 <form action="./app/models/cadImg.php" method="POST" class="frm" id="frm" enctype="multipart/form-data">
-		<h1 class="titleForm row-1 col-full">Cadastrar Foto</h1>
+		<h1 class="titleForm row-1 col-1_5">Cadastrar Foto</h1>
 		<label class="row-2 col-1_2">
 		Nº Pedido
-			<input type="text" name="txtPedido" id="pedido">
+			<input type="text" name="txtPedido" id="pedido" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 		</label>
 		<label class="row-2 col-2_4">
 		Endereço da montagem
@@ -41,13 +41,13 @@
 		</label>
 		<label class="row-3">
 		Telefone do montador
-			<input type="text" name="txtTel" id="">
+			<input type="text" name="txtTel" id="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 		</label>
 		<label class="row-3">
 		Data da visita
 			<input type="date" name="txtData" id="cmpData">
 		</label>
-		<label class="row-4 col-full">
+		<label class="row-4 col-1_5">
 		Observação
 			<textarea id="txtObservacao" name="txtObservacao" onchange="maiusculo('txtObservacao')"></textarea>
 		</label>

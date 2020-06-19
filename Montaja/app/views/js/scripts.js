@@ -1,3 +1,7 @@
+/*function numero(){
+	return event.charCode >= 48 && event.charCode <= 57
+}*/
+
 function maiusculo(id){
 	var ucase = document.getElementById(id).value.toUpperCase()
 		document.getElementById(id).value= ucase;
@@ -66,4 +70,5 @@ function loadDoc(arquivo){
 	}
 	xmlhttp.open("POST","./app/views/forms/"+arquivo+".php",true);
 	xmlhttp.send();
+
 }

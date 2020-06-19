@@ -2,8 +2,7 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-	
+	font-family: 'Roboto', sans-serif;	
 }
 .frm{
 	display:grid;
@@ -16,8 +15,6 @@
 	font-size:25px;
 	color:rgb(12,200,150);
 	font-family: 'Quicksand', sans-serif;
-	
-	
 }
 .row-1{
 	grid-row:1 / 2;
@@ -34,9 +31,7 @@
 .row-5{
 	grid-row:5 / 6;
 }
-.col-full{
-	grid-column:1 / 5 ;
-}
+
 .col-1_2{
 	grid-column:1 / 2;
 }
@@ -46,11 +41,17 @@
 .col-1_4{
 	grid-column:1 / 4; 
 }
+.col-1_5{
+	grid-column:1 / 5 ;
+}
 .col-2_4{
 	grid-column:2 / 4;
 }
 .col-4_5{
 	grid-column:4 / 5;
+}
+.col-4_6{
+	grid-column:4 / 6;
 }
 textarea{
 	height:100px;
@@ -83,51 +84,50 @@ input[type=file]{
 
 .btnCons{
 	margin-left:-11px;
-	margin-top:16.5px;
-	padding:6.5px;
+	margin-top:16.3px;
+	padding:6.2px;
 	width:60px;
 	border-radius:0 5px 5px 0;
-	/*background:url('./app/views/imagens/camera.png');*/
 	background:rgb(0, 120, 225);
 	border:1px solid rgb(0, 120, 225);
 	color:white;
-
 }
-.small{width:70px;height:30px;margin-top:17px;text-align:center;}
 .wrapper{
 	width:90%;
 	margin:0 auto;
 	display:grid;
 	grid-template-columns:repeat(3, 70px)  2fr 1fr 150px;
-	/*grid-template-rows:12vh 8vh  20vh 40vh 12vh;*/
 	grid-gap:10px;
 }
-
 
 .cab{
 	padding:5px 20px;
 	display:grid;
 	grid-template-columns:repeat(6, auto);
-	/*justify-content:space-between;*/
-	background:/*rgb(25, 90, 190);*/#6EA4BF;
+	background:#6EA4BF;
 	grid-column:1 / 7;
 }
 .cx{
-	/*padding:10px;*/
 	text-align:center;
 	color:white;
 }
 .cx2{
 	text-align:left;
-
 }
 .cx2 h1{
 	margin-top:30px;
 	text-shadow:2px 2px 4px black;
 	font-size:50px;
-	/*color:#93C6D6;*/
 	font-family: 'Quicksand', sans-serif;
 }
+.bx{
+	cursor:pointer;
+	padding:10px;
+}
+/*.box1{background:rgb(25, 25, 90);}
+.box2{background:rgb(100, 225, 120);}
+.box3{background:rgb(190, 25, 90);	}
+.box4{background:rgb(90, 25, 90);}*/
 
 /*---estiliza menu-------*/
 #mainMenu ul li{
@@ -135,8 +135,7 @@ input[type=file]{
 	border-bottom:1px solid #A9BCD0;
 }
 ul li:hover{
-	background:/*rgb(25, 90, 190)*/#A9BCD0;
-	/*color:white;*/
+	background:#A9BCD0;
 	cursor:pointer;
 }
 li{
@@ -150,7 +149,7 @@ li{
 .menu{
 	grid-row:3/5;
 	grid-column:1/4;
-	background:/*rgb(25, 95, 90);*/#C5D5EA;
+	background:#C5D5EA;
 	color:black;
 }
 .sidebar{
@@ -168,37 +167,11 @@ li{
 .rodape{
 	grid-row: 5 / 6;
 	grid-column:1 / 7;
-	background:/*rgb(25, 90, 190);*/#6EA4BF;
+	background:#6EA4BF;
 	padding:20px;
 	height:10vh;
-	/*color:#93C6D6;*/
 }
-.bx{
-	cursor:pointer;
-	padding:10px;
-}
-.box1{
-	/*background:rgb(25, 25, 90);azul*/
-	grid-row: 1 / 2;
-	grid-row:2/3;
-}
-.box2{
-	/*background:rgb(100, 225, 120);verde*/
-	grid-row: 2 / 3;
-	grid-row:2/3;
-}
-.box3{
-	/*background:rgb(190, 25, 90);verm/vinho*/
-	grid-row: 3 / 4;
-	grid-row:2/3;
-	
-}
-.box4{
-	/*background:rgb(90, 25, 90);*/
-	grid-column:4/6;
-	grid-row:2/3;
-	color:black;
-}
+
 
 
 
