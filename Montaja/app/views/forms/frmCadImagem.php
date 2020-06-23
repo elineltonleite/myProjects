@@ -1,5 +1,5 @@
 
-<form action="./app/models/cadImg.php" method="POST" class="frm" id="frm" enctype="multipart/form-data">
+<form action="./app/models/cadFoto.php" method="POST" class="frm" id="frm" enctype="multipart/form-data">
 		<h1 class="titleForm row-1 col-1_5">Cadastrar Foto</h1>
 		<label class="row-2 col-1_2">
 		Nº Pedido
@@ -52,7 +52,7 @@
 			<textarea id="txtObservacao" name="txtObservacao" onchange="maiusculo('txtObservacao')"></textarea>
 		</label>
 		<label class="row-5 col-1_4">
-			<input type="file" name="foto[]" multiple="multiple" id="">
+			<input type="file" name="arquivo" >
 		</label>
 		<label class="row-5">
 		<button id="" class="btn">Enviar</button>

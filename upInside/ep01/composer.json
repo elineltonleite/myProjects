@@ -1,0 +1,29 @@
+{
+	"name":"elineltonleite/phptip001",
+	"description":"conhecendo o coposer e configurando IDE | PHP Tips 001 ",
+	"minimum-stability":"stable",
+	"license":"MIT",
+	"authors":[
+		{
+			"name":"Elinelton Leite",
+			"email":"elineltonleite@gmail.com",
+			"role":"developer",
+			"homepage":"https://github.com/elineltonleite"
+			
+		}
+	],
+	"config":{
+		"vendor-dir":"vendor"
+	},
+	"autoload":{
+		"psr-4":{
+			"source\\":"source/"
+		},
+		"files":[
+			"source/Config.php"
+		]
+	},
+	"require":{
+		"phpmailer/phpmailer":"6.0.*"
+	}
+}

@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +11,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<script src="./app/views/js/scripts.js"></script>
-	<head>
+	</head>
 	<body>
 		<main class="wrapper">
 			<header class="cx cab">
@@ -31,7 +34,11 @@
 			<div class="cx bx box3" id="bx3">
 				<img width="50" src="./app/views/imagens/pen.png">
 			</div>
-			<div class="cx box4 col-4_6">
+			<div class="box4 col-4_6">
+                            <?php
+                                $msg = isset($_SESSION['msg'])?$_SESSION['msg']:'';
+                                echo $msg;
+                            ?>
 				<!--<img width="50" src="./app/views/imagens/book.png">-->
 			</div>
 			
@@ -50,7 +57,11 @@
 			<?php
 				if(isset($_REQUEST['frm'])){
 					include_once'./app/views/forms/'.$_REQUEST['frm'].'.php';
-				}
+                                        
+                                }elseif(isset($_REQUEST['acao'])){
+                                    include_once'./app/models/'.$_REQUEST['acao'].'.php';
+                                    unset($_REQUEST['acao']);
+                                }
 			?>
 			</main>
 			<!--<aside class="cx sidebar">Sidebar</aside>-->

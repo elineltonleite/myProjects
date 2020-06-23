@@ -21,7 +21,6 @@ function ocultarMenuAudio(){
 	document.getElementById('l3').style.display="none";
 	document.getElementById('l4').style.display="none";
 }
-
 ocultarMenuAudio();
 ocultarMenuImagem();
 ocultarMenuAdicionar();

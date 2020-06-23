@@ -128,7 +128,10 @@ input[type=file]{
 .box2{background:rgb(100, 225, 120);}
 .box3{background:rgb(190, 25, 90);	}
 .box4{background:rgb(90, 25, 90);}*/
-
+.box4{
+    color:black;
+    text-align: left;
+}
 /*---estiliza menu-------*/
 #mainMenu ul li{
 	padding:5px;
@@ -160,9 +163,11 @@ li{
 .conteudo{
 	grid-row:3/ 4;
 	grid-column:4 / 7;
-	height:55vh;
+	/*height:58vh;*/
+        height:58vh;
 	color:black;
 	text-align:left;
+        overflow:auto ;
 }
 .rodape{
 	grid-row: 5 / 6;
@@ -171,10 +176,52 @@ li{
 	padding:20px;
 	height:10vh;
 }
-
-
-
-
-
-
-
+/*mensagens*/
+.sucess{
+    color:rgb(13,255,150);
+}
+.error{
+    color:rgb(225,0,100);
+}
+table{
+    margin-top:20px;
+}
+table tr {
+    font-size: 12px;
+}
+table td,th{
+    text-align: left;
+}
+.rowTable:hover{
+    background: red;
+}
+/*.info,.sucess,.warning,.error{
+    padding:10px 50px;
+    background-repeat:no-repeat;
+    background-position:10px;
+    border-radius:5px;
+}
+.info{
+    background-color:rgb(120,196,252);
+    border:1px solid;
+    color:rgb(2,61,104);
+    background-image:url("../img/icone/info.png");
+}
+.sucess{
+    background-color:rgb(191,250,133);
+    border:1px solid;
+    color:rgb(21,142,36);
+    background-image:url("../img/icone/sucess.png");
+}
+.warning{
+    background-color:rgb(251,198,117);
+    border:1px solid;
+    color:rgb(169,100,5);
+    background-image:url("../img/icone/warning.png");
+}
+.error{
+    background-color:rgb(254,156,164);
+    border:1px solid;
+    color:rgb(201,3,18);
+    background-image:url("../img/icone/error.png");
+}*/
