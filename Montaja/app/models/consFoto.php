@@ -4,7 +4,7 @@ include_once'./app/views/forms/frmConsImagem.php';
 $c = new conexaoMysql();
 $sql = "SELECT * FROM `fotos` WHERE `pedido`=".$_REQUEST['txtPedido'];
 $result = $c->execSql($sql);
-//echo'<h3>Resultado da busca</h3><hr>';
+
 if($result->num_rows == 0){
     echo'<table>
         <tr><td colspan="7"><h3>Resultado da busca</h3><hr></td></tr>
@@ -34,7 +34,7 @@ if($result->num_rows == 0){
             echo '<td>'.$row['cidade'].'</td>';
             echo '<td>'.$row['montador'].'</td>';
             echo '<td>'.$row['telefone'].'</td>';
-            echo '<td>'.$row['data'].'</td>';
+            echo '<td>'.date('d/m/Y',strtotime($row['data'])).'</td>';
             echo '<td><a href="'.$row['url_foto'].'" target="blanck">Ver foto</a></td>';
             echo'</tr>
                 <tr><th colspan="2">Observação</th></tr>
@@ -44,11 +44,3 @@ if($result->num_rows == 0){
     }
     echo'</table>';
 }    
-/*       
-	echo $row['observacao'].'<br>';
-	echo '<a href="'.$row['url_foto'].'">foto</a><br>';
-        echo '<iframe src="'.$row['url_foto'].'"></iframe><br>';
-	echo'<hr>';
-}
- * 
- */

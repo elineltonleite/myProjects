@@ -5,6 +5,6 @@
 		<input type="text" name="txtPedido" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 	</label>
 	<label class="row-2 col-2_3">
-            <button class="btn btnCons">Buscar</button>
+            <button class="btn btnCons" onclick="loadDoc('./app/models/','consFoto');">Buscar</button>
 	</label>	
 </form>
